@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className='main'>
-    <h1>Welcome to the weather search applictaion!</h1>
+    <h1>Welcome to the weather search application!</h1>
     <div className='line'></div>
     {weather && (
       <div className='main-wrapper'>
