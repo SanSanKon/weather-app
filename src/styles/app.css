@@ -1,0 +1,116 @@
+* {
+  background: #10316b;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+.main h1, .main h4 {
+  color: #faf6e9;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.main .line {
+  background: #e7eaf6;
+  height: 15px;
+  margin: 0 0 20px;
+  width: 100%;
+}
+.main .main-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 15px;
+  width: 100%;
+}
+.main .main-wrapper .search {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.main .main-wrapper .search h2 {
+  color: #eac100;
+  font-size: 1.25rem;
+  margin: 0 0 10px;
+}
+.main .main-wrapper .search .search-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.main .main-wrapper .search .search-wrapper input, .main .main-wrapper .search .search-wrapper button {
+  background: #dfebed;
+  border: none;
+  border-radius: 5px;
+  color: #272343;
+}
+.main .main-wrapper .search .search-wrapper input {
+  border: 1px solid #eac100;
+  width: 70%;
+}
+.main .main-wrapper .search .search-wrapper input:focus {
+  outline: none;
+}
+.main .main-wrapper .search .search-wrapper button {
+  color: #10316b;
+  font-weight: 700;
+  width: 20%;
+}
+.main .main-wrapper .search .search-wrapper button:hover {
+  background: #eac100;
+  cursor: pointer;
+}
+.main .weather-info {
+  text-align: center;
+  width: 50%;
+}
+.main .weather-info h1, .main .weather-info h2 {
+  color: #ececec;
+  font-size: 1.25rem;
+  margin: 0 0 15px;
+}
+.main .weather-info h1 span, .main .weather-info h2 span {
+  color: #eac100;
+}
+.main .weather-info .condition {
+  margin: 0 0 15px;
+}
+.main .weather-info .condition h3 {
+  color: #ececec;
+  font-size: 1rem;
+}
+.main .weather-info .condition h3 span {
+  color: #eac100;
+}
+.main .weather-info .condition img {
+  max-height: 20%;
+  max-width: 20%;
+}
+@media screen and (max-width: 590px) {
+  .main .main-wrapper {
+    flex-direction: column;
+  }
+  .main .main-wrapper .search {
+    margin: 0 0 15px;
+    width: 100%;
+  }
+  .main .main-wrapper .search h2 {
+    text-align: center;
+  }
+  .main .main-wrapper .search .search-wrapper {
+    justify-content: space-around;
+  }
+  .main .weather-info {
+    width: 100%;
+  }
+}/*# sourceMappingURL=app.css.map */
