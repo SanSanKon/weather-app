@@ -15,7 +15,7 @@
 }
 .main h1, .main h4 {
   color: #faf6e9;
-  margin: 0 0 20px;
+  margin: 0 0 2rem;
   text-align: center;
 }
 .main .line {
@@ -53,9 +53,12 @@
   border: none;
   border-radius: 5px;
   color: #272343;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
 }
 .main .main-wrapper .search .search-wrapper input {
   border: 1px solid #eac100;
+  color: #10316b;
   width: 70%;
 }
 .main .main-wrapper .search .search-wrapper input:focus {
@@ -74,12 +77,12 @@
   text-align: center;
   width: 50%;
 }
-.main .weather-info h1, .main .weather-info h2 {
+.main .weather-info h2 {
   color: #ececec;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 0 0 15px;
 }
-.main .weather-info h1 span, .main .weather-info h2 span {
+.main .weather-info h2 span {
   color: #eac100;
 }
 .main .weather-info .condition {
@@ -87,7 +90,7 @@
 }
 .main .weather-info .condition h3 {
   color: #ececec;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .main .weather-info .condition h3 span {
   color: #eac100;
@@ -95,6 +98,38 @@
 .main .weather-info .condition img {
   max-height: 20%;
   max-width: 20%;
+}
+@media screen and (max-width: 1015px) {
+  .main h1 {
+    font-size: 1.5rem;
+  }
+  .main .main-wrapper .search h2 {
+    font-size: 1rem;
+  }
+  .main .main-wrapper .search .search-wrapper input, .main .main-wrapper .search .search-wrapper button {
+    padding: 0.25rem 0.5rem;
+  }
+  .main .main-wrapper .search .search-wrapper button {
+    font-size: 1rem;
+  }
+  .main .main-wrapper .search .search-wrapper input {
+    font-size: 1.25rem;
+  }
+  .main .weather-info h1, .main .weather-info h2 {
+    font-size: 1rem;
+    margin: 0 0 15px;
+  }
+  .main .weather-info .condition {
+    margin: 0 0 15px;
+  }
+  .main .weather-info .condition h3 {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .main .main-wrapper .search .search-wrapper button {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 590px) {
   .main .main-wrapper {
